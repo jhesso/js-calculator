@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Calculator</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" href="./style.css">
+	<script src="./calculator.js" defer></script>
+</head>
+<body>
+	<header>
+		<div>
+			<h1>Javascript calculator by: jhesso</h1>
+		</div>
+	</header>
+	<div class="container">
+		<div class="calculator">
+			<div id="screen">
+				<div class="previous" data-previous></div>
+				<div class="current" data-current></div>
+			</div>
+			<div class="buttons">
+				<div class="col">
+					<button data-clear>C</button>
+					<button data-backspace><-</button>
+					<button data-operation>%</button>
+					<button data-operation>÷</button>
+				</div>
+				<div class="col">
+					<button data-digit>7</button>
+					<button data-digit>8</button>
+					<button data-digit>9</button>
+					<button data-operation>*</button>
+				</div>
+				<div class="col">
+					<button data-digit>4</button>
+					<button data-digit>5</button>
+					<button data-digit>6</button>
+					<button data-operation>-</button>
+				</div>
+				<div class="col">
+					<button data-digit>1</button>
+					<button data-digit>2</button>
+					<button data-digit>3</button>
+					<button data-operation>+</button>
+				</div>
+				<div class="col">
+					<button>+/-</button>
+					<button data-digit>0</button>
+					<button data-digit>.</button>
+					<button data-equal>=</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<div>
+			<p>Created by: Juho Hesso</p>
+		</div>
+	</footer>
+	<!-- <script src="./main.js"></script> -->
+</body>
+</html>
