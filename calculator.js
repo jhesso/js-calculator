@@ -38,7 +38,13 @@ class Calculator {
 	}
 
 	chooseOperation(operation) {
-		if (this.currentOperand === '') return;
+		// if we press another operator and we have nothing in the currentOperand spot, simply change the selected operator
+		// this way the user doesn't have to start over if they select the wrong operator
+		if (this.currentOperand === ''){
+			this.operation = operation;
+			this.currentOperand = '';
+			return;
+		}
 		if (this.previousOperand !== '') this.compute();
 		this.operation = operation;
 		this.previousOperand = this.currentOperand;
