@@ -1,9 +1,0 @@
-make sure to make a mobile view
-
-error handling
-
-dark mode button
-
-keyboard support
-
-make sure all buttons work
