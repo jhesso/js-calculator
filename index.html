@@ -26,7 +26,7 @@
 			<div class="buttons">
 				<div class="col">
 					<button data-clear>C</button>
-					<button data-backspace><-</button>
+					<button data-backspace>←</button>
 					<button data-operation>%</button>
 					<button data-operation>÷</button>
 				</div>
@@ -49,7 +49,7 @@
 					<button data-operation>+</button>
 				</div>
 				<div class="col">
-					<button>+/-</button>
+					<button data-changeSign>+/-</button>
 					<button data-digit>0</button>
 					<button data-digit>.</button>
 					<button data-equal>=</button>
@@ -57,11 +57,26 @@
 			</div>
 		</div>
 	</div>
+	<div class="container">
+		<div class="instructions" data-instructions>
+			<button class="instructions-button" data-instructions-button>keyboard instructions</button>
+		</div>
+	</div>
+	<div class="instructions-text-div">
+		<p id="instruction-text" data-instruction-text>
+			You can also use the calculator with your keyboard. <br>
+			numbers = number keys (0-9) <br>
+			symbols = symbol keys (+, -, *, /, %)<br>
+			equal sign = '=' or Enter <br>
+			clear = ESC <br>
+			backspace (←) = Backspace<br>
+			change sign (+/-) = '_' (underscore)
+		</p>
+	</div>
 	<footer>
 		<div>
 			<p>Created by: Juho Hesso</p>
 		</div>
 	</footer>
-	<!-- <script src="./main.js"></script> -->
 </body>
 </html>

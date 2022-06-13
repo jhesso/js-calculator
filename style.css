@@ -1,14 +1,8 @@
 /* variables */
 :root {
 	--main-font: Roboto;
-
-	/* colors */
-	/* white mode */
-	--white-bg: #eff1f5;
-	--white-text: #4c4f69;
-	--white-header-footer: #9ca0b0;
 	
-	/* dark mode */
+	/* colors */
 	--dark-bg: #303446;
 	--dark-text: #c6d0f5;
 	--dark-header-footer: #737994;
@@ -16,6 +10,7 @@
 	--dark-button-background: #414559;
 	--dark-red: #e78284;
 	--dark-peach: #ef9f76;
+	--dark-subtext: rgba(165, 173, 206, .3);
 }
 
 header {
@@ -40,7 +35,6 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding-top: 100px;
 }
 
 .calculator {
@@ -48,6 +42,7 @@ body {
 	flex-direction: column;
 	align-items: center;
 	padding-bottom: 5px;
+	padding-top: 100px;
 }
 
 #screen {
@@ -95,6 +90,29 @@ button {
 button:hover {
 	background-color: var(--dark-bg);
 	cursor: pointer;
+}
+
+.instructions {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	margin-top: 1rem;
+	width: 315px;
+}
+
+.instructions button {
+	width: auto;
+}
+
+.instructions-text-div {
+	display: flex;
+	justify-content: center;
+	font-size: 1rem;
+	color: var(--dark-subtext);
+}
+
+#instruction-text {
+	display: none;
 }
 
 footer {

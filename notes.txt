@@ -5,3 +5,5 @@ error handling
 dark mode button
 
 keyboard support
+
+make sure all buttons work
